@@ -1,3 +1,7 @@
+# Based on tutorial
+
+Based on tutorial: [https://www.emqx.com/en/blog/how-to-use-mqtt-in-react](https://www.emqx.com/en/blog/how-to-use-mqtt-in-react)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
