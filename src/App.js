@@ -1,7 +1,7 @@
 import * as mqtt from "mqtt/dist/mqtt"
 import { useEffect, useState, useCallback } from "react"
 
-
+// https://www.emqx.com/en/blog/how-to-use-mqtt-in-react
 
 function App() {
 	const [clientConnect, setConnectClient] = useState(null)
@@ -56,7 +56,7 @@ function App() {
 	const messagesList = payload.map((newMessage, index) => <p key={index}>{newMessage.message}</p>)
 
   return (
-		<div>
+		<div style={{ textAlign: 'center' }}>
 			<h2>{connectionStatus ? 'Connected to server' : 'Not connected to server'}</h2>
 			<h3>topic: {topicName}</h3>
 			<button onClick={mqttConnectDisconnect}>{connectionStatus ? 'Disconect' : 'Connect'}</button>
