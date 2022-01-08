@@ -21,6 +21,7 @@ function App() {
 			setConnectionStatus(false)
 			setTopicName(`unsubscribed`)
 		})
+		setPayload([])
 	}, [clientConnect])
 
 	const mqttConnectDisconnect = () => {
